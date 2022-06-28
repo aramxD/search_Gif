@@ -3,11 +3,11 @@ import ProjectTitle from "../element/ProjectTitle";
 import SearchComponents from "../element/SearchComponents";
 
 
-function Header(){
+function Header({searchData, setSearchData, setLeSearch}){
     return(
     <>
     <ProjectTitle/>
-    <SearchComponents/>
+    <SearchComponents searchData={searchData} setSearchData={setSearchData} setLeSearch={setLeSearch}/>
     </>
     )
 }

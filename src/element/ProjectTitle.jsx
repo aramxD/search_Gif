@@ -1,12 +1,20 @@
 import React from "react";
+import styled from "styled-components";
 
 
-function ProjectTitle(){
+function ProjectTitle({className}){
      
     return(
-    <h1> Soy un Buscador de GiF</h1>
+        <div className={className}>
+    <h1>Le Search GIF </h1>
+    </div>
     )
 }
 
 
-export default ProjectTitle
+export default styled(ProjectTitle)`
+    
+    h1{
+        margin:30px 0;
+    }
+`

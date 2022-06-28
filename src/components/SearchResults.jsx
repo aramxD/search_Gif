@@ -1,25 +1,25 @@
 import React from "react";
 import   CardGif  from '../element/CardGif'
-import data from '../data'
+ 
 import styled from 'styled-components'
+ 
 
-
-console.log(data)
-
-function SearchResults({className}){
+function SearchResults({className, data, title}){
 
     return (
         <div className={className}>
-           <h1>soy un buscador de GIF</h1>
+           <h2>{title}</h2>
 
             <div className="resultContainer">
-           {data[0].data.map(dato=>( 
+           {data.map(dato=>( 
+            <>
             <CardGif 
-               
               key={dato.id}
               src={dato.images.fixed_height.url}
               title={dato.title}
               /> 
+              {/* <p>{dato.id}</p> */}
+              </>
             ))
            } 
           </div>
@@ -32,6 +32,9 @@ function SearchResults({className}){
 
 
 export default styled(SearchResults)`
+h2{
+  margin:30px 0;
+}
   
   .resultContainer{
     column-count:4;
@@ -43,11 +46,22 @@ export default styled(SearchResults)`
      
   }
   
+  
 
   @media (max-width:900px){
     .resultContainer{
       column-count:3;
     }
   }
+  @media (max-width:600px){
+    .resultContainer{
+      column-count:2;
+    }
+  }
+  /* @media (max-width:400px){
+    .resultContainer{
+      column-count:1;
+    }
+  } */
 
 `

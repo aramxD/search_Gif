@@ -1,16 +1,25 @@
 import React from "react";
+import styled from "styled-components";
+import logo from '../img/logo_450x200_azul_trans.png'
 
-
-function Footer(){
+function Footer({className}){
 
 
     return(
-        <React.Fragment>
-            <img src="" alt="soy el logo" />
+        <footer className={className}>
+            <a href="juliosantacruz.dev">
+            <img src={logo} alt="soy el logo" />
+            </a>
 
-
-        </React.Fragment>
+        </footer>
     )
 }
 
-export default Footer
+export default styled(Footer)`
+margin: 30px 0 0 0;
+    height:80px;
+
+    img{
+        height:80px
+    }
+`

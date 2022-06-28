@@ -20,6 +20,9 @@ export default styled(CardGif)`
   }
 
   img:hover{
-    opacity:.7;
+     
+    border-radius:20px;
+    box-shadow:1px 8px 5px black;
+    transform:scale(1.3);
   }
-`
+` 
