@@ -1,17 +1,25 @@
 import React from "react";
+import styled from "styled-components";
 
-
-function CardGif({src, title, width, height}){
+function CardGif({className, src, title, }){
 
 
     return (
-        <article>
-        <h2>Soy la tarjeta del gif :D</h2>
+        <article className={className} onClick={ ()=>{navigator.clipboard.writeText(src)} } >
+        
         <img src={src} alt={title} />
-        <p>w={width} h={height}</p>
+        
         </article>
     )
 }
 
 
-export {CardGif}
+export default styled(CardGif)`
+ img{
+    width:100%;
+  }
+
+  img:hover{
+    opacity:.7;
+  }
+`
