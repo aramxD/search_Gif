@@ -10,8 +10,8 @@ import axios from 'axios'
 function App() {
   const [searchData, setSearchData]= useState('init')
 
-  const URL_TREND = `https://api.giphy.com/v1/gifs/trending?api_key=${LeKey}&limit=25&rating=r`
-  const URL_SEARCH = `https://api.giphy.com/v1/gifs/search?api_key=${LeKey}&q=${searchData}&limit=25&offset=0&rating=r&lang=en`
+  const URL_TREND = `https://api.giphy.com/v1/gifs/trending?api_key=QTkEsYrb67W1wOhb5ImFwa285OnLIPa6&limit=25&rating=r`
+  const URL_SEARCH = `https://api.giphy.com/v1/gifs/search?api_key=QTkEsYrb67W1wOhb5ImFwa285OnLIPa6&q=${searchData}&limit=25&offset=0&rating=r&lang=en`
    
   
 
