@@ -7,7 +7,7 @@ function Footer({className}){
 
     return(
         <footer className={className}>
-            <a href="juliosantacruz.dev">
+            <a href="https://juliosantacruz.dev" >
             <img src={logo} alt="soy el logo" />
             </a>
 
@@ -22,4 +22,4 @@ margin: 30px 0 0 0;
     img{
         height:80px
     }
-`
+` 
